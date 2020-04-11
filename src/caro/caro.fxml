@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="caro.Controller">
+   <children>
+      <AnchorPane fx:id="subAnchor" layoutY="100.0" prefHeight="900.0" prefWidth="900.0" style="-fx-background-color: White;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <GridPane id="gridPane" fx:id="gridPane" layoutY="7.0" minHeight="900.0" minWidth="900.0" onMouseReleased="#markUp" prefHeight="900.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: #fff9de;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="290.0" layoutY="16.0" prefHeight="60.0" prefWidth="200.0" style="-fx-background-color: #fff9de; -fx-alignment: center; -fx-text-fill: #cf000f; -fx-font-size: 36;" text="CARO" />
+            <Label layoutX="660.0" layoutY="20.0" prefHeight="30.0" prefWidth="60.0" style="-fx-font-size: 14; -fx-text-fill: #f5ab35;" text="Player 1" AnchorPane.leftAnchor="660.0" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="15.0" />
+            <Label layoutX="660.0" layoutY="49.0" prefHeight="30.0" prefWidth="60.0" style="-fx-text-fill: #f5ab35; -fx-font-size: 14;" text="Player 2" AnchorPane.bottomAnchor="20.599999999999994" AnchorPane.leftAnchor="660.0" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="736.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="736.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="15.0">
+               <image>
+                  <Image url="@img/redCircle.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="736.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="736.0" AnchorPane.rightAnchor="30.0">
+               <image>
+                  <Image url="@img/blueCircle.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="29.0" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" style="-fx-border-radius: 10; -fx-border-color: #19b5fe; -fx-background-radius: 10;" text="New game" AnchorPane.topAnchor="30.0" />
+            <Button layoutX="129.0" layoutY="30.0" mnemonicParsing="false" onAction="#undo" prefHeight="30.0" prefWidth="74.0" style="-fx-border-color: #19b5fe; -fx-border-radius: 10; -fx-background-radius: 10;" text="Undo" AnchorPane.topAnchor="30.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
